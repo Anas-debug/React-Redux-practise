@@ -4,3 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  min-height: 100vh;
+  font-size: 5rem;
+  display: grid;
+  place-content: center;
+}
