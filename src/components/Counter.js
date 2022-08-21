@@ -9,11 +9,14 @@ export default function Counter(){
     const increment = () => {
         setCounter(prevCounter => prevCounter + 1);
     }
+    const reset = () => {
+        setCounter(0);
+    }
 
     
     return(
         <div>
-            Value: {counter} <button onClick={increment}>Increment</button>
+            Value: {counter} <button onClick={increment}>Increment</button><button onClick ={reset}>Reset</button>
         </div>
     );
 
