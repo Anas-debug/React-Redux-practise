@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 
 export default function Counter(){
 
@@ -6,12 +7,13 @@ export default function Counter(){
 
 
     const increment = () => {
-        setCounter(prevCounter => prevCounter +  1);
+        setCounter(prevCounter => prevCounter + 1);
     }
 
+    
     return(
         <div>
-            Value: {counter} <button onCLick ={increment}>Increment</button>
+            Value: {counter} <button onClick={increment}>Increment</button>
         </div>
     );
 
